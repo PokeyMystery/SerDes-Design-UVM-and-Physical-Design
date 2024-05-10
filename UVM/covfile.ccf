@@ -1,0 +1,9 @@
+select_coverage -block -expr -fsm -toggle -module tb.u0
+set_branch_scoring
+select_functional
+set_toggle_includex
+#set_toggle_includez
+set_refinement_resilience
+set_expr_scoring -struct
+set_covergroup -optimize_model
+set_expr_coverable_statements -all

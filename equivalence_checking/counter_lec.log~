@@ -1,0 +1,76 @@
+                          CONFORMAL (R)
+                   Version 20.20-s200 (01-Feb-2021) (64 bit executable)
+   Copyright (c) Cadence Design Systems, Inc., 1997-2020. All Rights Reserved
+
+
+This program is proprietary and confidential information belonging to
+Cadence Design Systems, Inc., and may be used and disclosed only as authorized
+in a license agreement controlling such use and disclosure.
+
+// Warning: This version is 1159 days old. You can download the latest version from http://downloads.cadence.com.
+
+// Command: set flatten model -gated_clock
+// Command: read library ../lib/fast_vdd1v0_basicCells.v -verilog -both
+// Parsing file ../lib/fast_vdd1v0_basicCells.v ...
+// Warning: (RTL14.1) Fanout load of the signal is removed (occurrence:56)
+// Warning: (VLG5.5) Internal primitive is recognized (occurrence:120)
+// Warning: (VLG5.6) Named port association is ignored for primitive gate (occurrence:120)
+// Warning: (IGN4) Attribute instance(s) are ignored (occurrence:2)
+// Warning: (IGN7.1) trireg net is modeled as a latch to hold value (occurrence:1)
+// Warning: (HRC1.4) Module/entity is empty (blackboxed) (occurrence:1)
+// Note: (HRC3.5b) Open output port connection is detected (occurrence:16)
+// Warning: (HRC3.10b) An input port is declared, but it is not used. Module is empty (occurrence:1)
+// Note: Read VERILOG library successfully
+// Command: read design ../rtl/top_32.sv -systemverilog -golden
+// Parsing file ../rtl/top_32.sv ...
+// Parsing file ../rtl/SIPO.sv ...
+// Parsing file ../rtl/PISO.sv ...
+// Parsing file ../rtl/encoder.sv ...
+// Parsing file ../rtl/decoder.sv ...
+// Golden root module is set to 'top'
+// Warning: (RTL1.5a) Assignment with RHS bit width is greater than LHS bit width (occurrence:9)
+// Warning: (RTL1.5b) Potential loss of RHS msb or carry-out bit (occurrence:2)
+// Warning: (RTL1.6) Blocking assignment is in sequential always block (occurrence:35)
+// Warning: (RTL5.3) Case expressions/items are resized (occurrence:1)
+// Note: (RTL5.5a) Default case item with non-X assignment(s) (occurrence:4)
+// Note: (RTL5.6) Case statement with no default (occurrence:2)
+// Note: Read VERILOG design successfully
+// Command: read design ../synthesis/outputs_clk_1/SerDes_netlist_clk_1.v -verilog -revised
+// Parsing file ../synthesis/outputs_clk_1/SerDes_netlist_clk_1.v ...
+// Revised root module is set to 'top'
+// Note: Read VERILOG design successfully
+// Command: set system mode lec
+// Processing Golden ...
+// Modeling Golden ...
+// Processing Revised ...
+// Modeling Revised ...
+// (F14) Remodeled 246 gated-clock DFF/DLAT(s)
+// Warning: Golden and Revised have different numbers of key points:
+// Golden  key points = 361
+// Revised key points = 379
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            34     32     295       361     
+--------------------------------------------------------------------------------
+Revised           34     32     295       361     
+================================================================================
+Unmapped points:
+================================================================================
+Revised:
+--------------------------------------------------------------------------------
+Unmapped points   DLAT      Total   
+--------------------------------------------------------------------------------
+Unreachable       18        18      
+================================================================================
+// Command: add compared point -all
+// 327 compared points added to compare list
+// Command: compare 
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Equivalent           32     295       327     
+================================================================================

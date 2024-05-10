@@ -1,0 +1,111 @@
+*** time_design #5 [begin] : totSession cpu/real = 0:02:59.9/0:17:55.0 (0.2), mem = 1893.9M
+ Reset EOS DB
+Ignoring AAE DB Resetting ...
+Extraction called for design 'top' of instances=1613 and nets=1667 using extraction engine 'post_route' at effort level 'low' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command set_design_mode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+post_route (extract_rc_effort_level low) RC Extraction called for design top.
+RC Extraction called in multi-corner(1) mode.
+Process corner(s) are loaded.
+ Corner: rccorners
+Metal density calculation for erosion effect completed (CPU=0:00:00.0  MEM=1893.93M)
+extractDetailRC Option : -outfile /tmp/innovus_temp_234516_centos.localdomain_VLSI_R8bCJJ/top_234516_1H2YUU.rcdb.d -maxResLength 222.222  -extended
+RC Mode: PostRoute extract_rc_effort_level low [Extended CapTable, RC Table Resistances]
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 0.90000
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Creating RPSQ from WeeR and WRes ...
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1873.9M)
+Extracted 10.0152% (CPU Time= 0:00:00.1  MEM= 1937.1M)
+Extracted 20.0114% (CPU Time= 0:00:00.1  MEM= 1937.1M)
+Extracted 30.0172% (CPU Time= 0:00:00.1  MEM= 1937.1M)
+Extracted 40.0133% (CPU Time= 0:00:00.1  MEM= 1937.1M)
+Extracted 50.0191% (CPU Time= 0:00:00.1  MEM= 1937.1M)
+Extracted 60.0152% (CPU Time= 0:00:00.1  MEM= 1937.1M)
+Extracted 70.0114% (CPU Time= 0:00:00.1  MEM= 1937.1M)
+Extracted 80.0172% (CPU Time= 0:00:00.1  MEM= 1937.1M)
+Extracted 90.0133% (CPU Time= 0:00:00.1  MEM= 1937.1M)
+Extracted 100% (CPU Time= 0:00:00.2  MEM= 1937.1M)
+Number of Extracted Resistors     : 21374
+Number of Extracted Ground Cap.   : 22020
+Number of Extracted Coupling Cap. : 30776
+Filtering XCap in 'relativeOnly' mode using values relative_c_threshold=0.03 and total_c_threshold=5fF.
+ Corner: rccorners
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1921.1M)
+PostRoute (extract_rc_effort_level low) RC Extraction DONE (CPU Time: 0:00:00.4  Real Time: 0:00:00.0  MEM: 1925.090M)
+Starting delay calculation for Setup views
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: top
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=1905.36)
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Creating RPSQ from WeeR and WRes ...
+Total number of fetched objects 1665
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 1667,  99.8 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1940.67 CPU=0:00:00.2 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=1940.67 CPU=0:00:00.3 REAL=0:00:01.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1940.7M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1940.7M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=1879.79)
+Glitch Analysis: View wc -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View wc -- Total Number of Nets Analyzed = 1665. 
+Total number of fetched objects 1665
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 1667,  2.2 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1922.46 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1922.46 CPU=0:00:00.0 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.4 real=0:00:01.0 totSessionCpu=0:03:01 mem=1922.5M)
+**ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+
+------------------------------------------------------------------
+         time_design Summary
+------------------------------------------------------------------
+
+Setup views included:
+ wc 
+
++--------------------+---------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg |reg2cgate| default |
++--------------------+---------+---------+---------+---------+
+|           WNS (ns):|  0.012  |  0.012  |  0.161  |  0.016  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |    0    |
+|          All Paths:|   353   |   263   |   18    |   244   |
++--------------------+---------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 72.917%
+Total number of glitch violations: 0
+------------------------------------------------------------------
+Reported timing to dir ./timingReports
+Total CPU time: 1.07 sec
+Total Real time: 2.0 sec
+Total Memory Usage: 1912.503906 Mbytes
+Reset AAE Options

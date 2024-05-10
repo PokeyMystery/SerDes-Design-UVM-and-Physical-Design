@@ -1,0 +1,108 @@
+Using Power View: wc.
+Load RC corner of view wc
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=1364.93MB/2711.72MB/1364.93MB)
+Begin Static Power Report Generation
+*----------------------------------------------------------------------------------------
+*	Innovus 20.14-s095_1 (64bit) 04/19/2021 14:41 (Linux 2.6.32-431.11.2.el6.x86_64)
+*	
+*
+* 	Date & Time:	2024-Apr-09 13:26:02 (2024-Apr-09 07:56:02 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: top
+*
+*	Liberty Libraries used:
+*	        wc: /home/VLSI/RTL_GDS_SERDES/phy_des_1_clk/postRoute/libs/mmmc/slow_vdd1v0_basicCells.lib
+*
+*	Parasitic Files used:
+*
+*       Power View : wc
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs
+*
+*       report_power
+*
+-----------------------------------------------------------------------------------------
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        0.74708269 	   69.4880%
+Total Switching Power:       0.32796183 	   30.5045%
+Total Leakage Power:         0.00008084 	    0.0075%
+Total Power:                 1.07512535
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                        0.3859      0.0422   2.615e-05      0.4281       39.82
+Macro                                  0           0           0           0           0
+IO                                     0           0           0           0           0
+Combinational                      0.203      0.1455   4.919e-05      0.3485       32.42
+Clock (Combinational)            0.05044     0.05301   1.616e-06      0.1034       9.622
+Clock (Sequential)                0.1078     0.08724   3.877e-06       0.195       18.14
+-----------------------------------------------------------------------------------------
+Total                             0.7471       0.328   8.084e-05       1.075         100
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                       0.9     0.7471       0.328   8.084e-05       1.075         100
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+clk                               0.1582      0.1402   5.493e-06      0.2985       27.76
+-----------------------------------------------------------------------------------------
+Total                             0.1582      0.1402   5.493e-06      0.2985       27.76
+-----------------------------------------------------------------------------------------
+Clock: clk
+Clock Period: 0.001000 usec 
+Clock Toggle Rate:  2000.0000 Mhz 
+Clock Static Probability:  0.5000
+  
+ 
+ 
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*              Highest Average Power: RC_CG_HIER_INST0/RC_CGIC_INST (TLATNTSCAX20):          0.04025
+*              Highest Leakage Power: RC_CG_HIER_INST0/RC_CGIC_INST (TLATNTSCAX20):        7.601e-07
+*                Total Cap:      2.42663e-12 F
+*                Total instances in design:  1566
+*                Total instances in design with no power:     0
+*                Total instances in design with no activty:     0
+
+*                Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+ 
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=1365.18MB/2711.72MB/1365.18MB)
+
