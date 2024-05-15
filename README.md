@@ -6,8 +6,8 @@ This project is oriented towards the RTL design, verification using UVM and Phus
 </div>
 
 ## Team
-> Punith P : punithprakash2001@gmail.com : https://www.linkedin.com/in/punith-p/
-> Yashasvi : yashasvishetty9697@gmail.com : 
+- Punith P : punithprakash2001@gmail.com : https://www.linkedin.com/in/punith-p/
+- Yashasvi : yashasvishetty9697@gmail.com : 
 
 ## Design
 All the system verilog design files of various sub components, encoder(8b/10b) , PISO(10b), SIPO, decoder(10b/8b), and the TOP module along with a basic randomized testbenh are provided in the RTL folder.
