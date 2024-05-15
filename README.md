@@ -1,9 +1,13 @@
 # Design Verification and Physical Design of SerDES
-This project is oriented towards the RTL design, verification using UVM and Phusical Design of a Quad-lane Full duplex Serializer/Deserializer(SerDes).
+This project is oriented towards the RTL design, verification using UVM and Phusical Design of a Quad-lane Full duplex Serializer/Deserializer(SerDes). This work was carried out as the mini project of our M.E VLSI Design, second semester.
 
 <div align="center">
   <img src="https://github.com/PokeyMystery/SerDes-Design-UVM-and-Physical-Design/assets/120627091/eed1436a-cfeb-43f2-a940-5ee5b6c9caf8" width=60% height=60% alt="Full duplex SerDes">
 </div>
+
+## Team
+> Punith P : punithprakash2001@gmail.com
+> Yashasvi : yashasvishetty9697@gmail.com
 
 ## Design
 All the system verilog design files of various sub components, encoder(8b/10b) , PISO(10b), SIPO, decoder(10b/8b), and the TOP module along with a basic randomized testbenh are provided in the RTL folder.
