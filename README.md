@@ -1,5 +1,5 @@
 # Design Verification and Physical Design of SerDES
-This project is oriented towards the RTL design, verification using UVM and Phusical Design of a Quad-lane Full duplex Serializer/Deserializer(SerDes). This work was carried out as the mini project of our M.E VLSI Design, second semester.
+This project is oriented towards the RTL design, verification using UVM and Phusical Design of a Quad-lane Full duplex Serializer/Deserializer(SerDes). This work was carried out as the mini project of our M.E VLSI Design, II semester, Manipal School of Information Sciences(MSIS), Manipal.
 
 <div align="center">
   <img src="https://github.com/PokeyMystery/SerDes-Design-UVM-and-Physical-Design/assets/120627091/eed1436a-cfeb-43f2-a940-5ee5b6c9caf8" width=60% height=60% alt="Full duplex SerDes">
